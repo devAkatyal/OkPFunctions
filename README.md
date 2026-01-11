@@ -38,6 +38,9 @@ Firebase Cloud Functions for handling Email OTP authentication flow.
    firebase functions:secrets:set SENDGRID_API_KEY
    ```
 
+5. **Update Sender Email**:
+   Open `functions/index.js` and update the `from` email address in the `requestOtp` function to your verified SendGrid sender email:
+
 ## 💻 Local Development
 
 Run the Firebase emulators to test functions locally:

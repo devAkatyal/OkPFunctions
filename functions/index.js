@@ -43,7 +43,7 @@ exports.requestOtp = onCall({secrets: [sendGridApiKey]}, async (request) => {
     sgMail.setApiKey(sendGridApiKey.value());
     const msg = {
       to: email,
-      from: "ayushkt92@gmail.com",
+      from: "ayushkt92@gmail.com",//Update this with your SendGrid email
       subject: "Your Verify Code",
       text: `Your verification code is ${code}`,
       html: `<strong>Your verification code is ${code}</strong>`,
